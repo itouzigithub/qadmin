@@ -1,0 +1,33 @@
+.context-menu {
+	position: fixed;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: auto;
+	z-index: 3;
+}
+
+.context-menu li {
+	min-width: 100px;
+	line-height: 32px;
+	font-size: 13px;
+	cursor: pointer;
+	padding: 0 10px;
+}
+
+.context-menu li:not(:last-child) {
+	border-bottom: 1px solid #ccc;
+}
+
+.context-menu li:hover {
+	background-color: #f2f2f2;
+}
+
+.context-menu li[disabled] {
+	cursor: not-allowed;
+	opacity: .4;
+}
+
+.context-menu .fa {
+	width: 20px;
+}

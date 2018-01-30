@@ -1,0 +1,111 @@
+.case-list {
+	position: relative;
+}
+
+div.case-container {
+	padding-top: 75px;
+	padding-left: 0;
+}
+
+section {
+	width: 100%;
+	margin-bottom: 30px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	padding-left: 80px;
+}
+section:not(:last-child) {
+	border-bottom: 1px dashed #e57066;
+}
+
+.case-title {
+	width: 70%;
+	font-weight: normal;
+	font-size: 20px;
+	position: relative;
+	margin-bottom: 10px;
+	min-height: 28px;
+}
+
+.case-title i {
+	display: block;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	left: -45px;
+	top: -2px;
+	border-radius: 50%;
+	font-size: 14px;
+	border: 1px solid transparent;
+	cursor: pointer;
+	transition: all .3s;
+	color: #fff;
+}
+section[type="0"] .case-title:hover .fa-thumb-tack {
+	color: #bcbbbd;
+}
+.case-title .fa-thumb-tack:hover {
+	border-color: #bcbbbd;
+}
+section[type="1"] .fa-thumb-tack {
+	color: #797979;
+}
+
+.onlyMarked section[type="0"] {
+	display: none;
+}
+
+.onlyMarked .tools-menu-item .fa-thumb-tack {
+	color: var(--main);
+}
+
+.case-desc {
+	color: #8c8b8d;
+	line-height: 1.5;
+	font-size: 15px;
+	position: relative;
+	display: flex;
+}
+
+.case-desc textarea {
+	height: 120px;
+}
+
+.hideCase .case-desc {
+	display: none;
+}
+
+div.case-step {
+	width: 42%;
+}
+
+div.case-expect {
+	width: 27%;
+	margin-left: 2%;
+}
+
+div.case-remark {
+	width: 27%;
+	margin-left: 2%;
+	font-size: 13px;
+}
+
+.case-sum {
+	position: absolute;
+	top: 24px;
+	font-size: 13px;
+	color: #bcbbbd;
+	padding-left: 80px;
+}
+
+.case-desc-placeholder {
+	color: #cccbcd; 
+	font-size: 15px;
+	transition: all .3s;
+	user-select: none;
+}
+.case-desc-placeholder:hover {
+	color: #999;
+}

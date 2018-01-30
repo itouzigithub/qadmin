@@ -1,0 +1,194 @@
+/* varible */
+:root {
+	--main: #e33946;
+	--red: #E10000;
+	--yellow: #FB9B2A;
+	--green: #00B28B;
+	--blue: #0e38b1;
+}
+
+/* general */
+body {
+	color: #3c3b3d;
+}
+
+/* layout */
+.app-holder {
+	width: 100%;
+	height: 100%;
+	padding-top: 50px;
+	padding-left: 60px;
+	position: relative;
+	overflow: hidden;
+}
+nav {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	padding-left: 15px;
+	padding-right: 50px;
+	background-color: var(--main);
+	color: #fff;
+}
+.sub-nav {
+	width: 100%;
+	height: 70px;
+	background-color: rgba(255, 255, 255, .9);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+aside {
+	width: 60px;
+	height: 100%;
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	overflow: hidden;
+}
+menu {
+	width: 170px;
+	height: 100%;
+	position: relative;
+	flex-shrink: 0;
+	background-color: #2b2d2c;
+	overflow-y: auto;
+}
+article {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.container {
+	height: 100%;
+	padding-top: 25px;
+	padding-bottom: 50px;
+	padding-left: 80px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #ccc;
+  border: 2px solid #fff;
+}
+
+/* input */
+.ipt-container {
+  width: 100%;
+  height: 100%;
+	background-color: #fff;
+}
+.ipt-container input {
+	height: 100%;
+}
+
+input[type='text'],
+input[type='password'],
+textarea {
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	padding-left: 5px;
+	padding-right: 5px;
+	transition: all .3s;
+	font-family: inherit;
+	font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+	border-color: var(--main);
+}
+
+input[type='text'],
+input[type='password'] {
+	height: 40px;
+}
+
+input[type="checkbox"] {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+label {
+	cursor: pointer;
+}
+
+textarea {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	min-height: 80px;
+	resize: vertical;
+}
+
+/* 页面列表 */
+.page-list {
+	padding: 20px 0;
+}
+.page-list-li {
+	height: 24px;
+	line-height: 24px;
+	position: relative;
+	color: #7b7d7c;
+	text-align: right;
+	font-size: 14px;
+}
+.page-list-li a {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding-left: 15px;
+	padding-right: 20px;
+	transition: all .2s;
+}
+.page-list-li a:hover {
+	background-color: rgba(0, 0, 0, .15);
+	padding-right: 15px;
+}
+
+a.page-list-active {
+  color: var(--main);
+  padding-right: 15px;
+}
+.page-list-tip {
+	font-size: 14px;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 45%;
+	color: #666;
+}
+
+.ipt-uploader {
+	opacity: 0;
+	position: absolute;
+	left: 10000px;
+}
+
+/* mask */
+.mask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(12, 17, 38, .3);
+	z-index: 9;
+}

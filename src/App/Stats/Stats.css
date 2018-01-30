@@ -1,0 +1,23 @@
+table {
+	font-size: 14px;
+	border-right: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+	border-collapse: collapse;
+}
+
+td,
+th {
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	text-align: left;
+	border-left: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	white-space: nowrap;
+}
+
+th {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

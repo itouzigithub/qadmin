@@ -1,0 +1,27 @@
+aside {
+	padding: 20px 12px;
+	background: #1b1d1c;
+}
+
+a.sidemenu-item {
+	display: block;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid rgba(100, 100, 120, .8);
+	color: rgba(100, 100, 120, .8);
+	transition: all .3s;
+	margin-bottom: 18px;
+}
+
+a.sidemenu-item:not(.sidemenu-active):hover {
+	color: var(--main);
+	border-color: var(--main);
+}
+a.sidemenu-active {
+	color: #fff;
+	border-color: var(--main);
+	background: var(--main);
+}

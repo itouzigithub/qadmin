@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <title>React App</title>
+  </head>
+  <body oncontextmenu="return false">
+  	<div id="app"></div>
+
+    <script src="%PUBLIC_URL%/static/js/zepto.min.js"></script>
+    <script>
+      window.$ajax = function (options) {
+        options.error = function () {
+          alert('网络错误');
+        }
+        $.ajax(options)
+      }
+    </script>
+  </body>
+</html>
